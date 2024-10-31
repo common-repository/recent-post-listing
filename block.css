@@ -1,0 +1,40 @@
+div.ss-post-container
+{
+	width: 100%;
+	margin: 0 auto;
+}
+div.post-box {
+	border: 1px LightSkyBlue solid;
+	border-left-width: 5px;
+	padding: 10px 15px;
+	margin: 30px;
+}
+div.post-box h2 {
+   font-size: 18px;
+	margin:0 0 10px 0;
+}
+div.post-box p {
+	font-size: 16px;
+	line-height: 24px;
+	margin:0;
+}
+.ss-post-container ul{
+	 float: left;
+    width: 100%;
+}
+li.post-box {
+    float: left;
+    width: 23%;
+    margin: 1%;
+    list-style: none;
+    text-align: center;
+}
+.post-box a
+{
+    text-decoration: none;
+}
+.post-box img{
+	 width: 100px;
+    height: 100px;
+}
+

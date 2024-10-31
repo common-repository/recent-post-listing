@@ -1,0 +1,49 @@
+{
+  "name": "gutenberg-recent-post-block",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "build-scripts": "wp-scripts build",
+    "start-build": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahshreya2911/recent-post-block.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahshreya2911/recent-post-block/issues"
+  },
+  "homepage": "https://github.com/shahshreya2911/recent-post-block#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-transform-react-constant-elements": "^7.17.6",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@wordpress/scripts": "6.2.0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@types/wordpress__blocks": "^9.1.1",
+    "@types/wordpress__components": "^19.3.0"
+  },
+   "scripts": {
+    "build:style": "node-sass style.scss style.css --output-style expanded && postcss -r style.css",
+    "build:style-editor": "node-sass style-editor.scss style-editor.css --output-style expanded && postcss -r style-editor.css",
+    "build:style-editor-customizer": "node-sass style-editor-customizer.scss style-editor-customizer.css --output-style expanded && postcss -r style-editor-customizer.css",
+    "build:rtl": "rtlcss style.css style-rtl.css",
+    "build:print": "node-sass print.scss print.css --output-style expanded && postcss -r print.css",
+    "build": "run-p \"build:*\"",
+    "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
+    "start-build" : "wp-scripts start"
+  }
+}
